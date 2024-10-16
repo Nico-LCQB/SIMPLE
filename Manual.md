@@ -31,17 +31,16 @@ If you want to simulate a lot of generation (e.g. 27), it might happen that R re
 memory.limit(size = 10000)
 ```
 
-    - Using R Console
-	- Open R
-	- Use the File / Source menu to select the file “SIMPLE_Neutral.R”
-
-    - Using RStudio
-	- Open Rstudio
-	- Using the File/Open File, open the file “SIMPLE_Neutral.R”
+* Using R Console
+	* Open R
+	* Use the File / Source menu to select the file “SIMPLE_Neutral.R”
+* Using RStudio
+	* Open Rstudio
+	* Using the File/Open File, open the file “SIMPLE_Neutral.R”
 
 ## Linux environment (e.g. ubuntu)
-	- Go into the folder containing the file “SIMPLE_Neutral.R”
-	- The command to launch the script is:
+	* Go into the folder containing the file “SIMPLE_Neutral.R”
+	* The command to launch the script is:
 ```
   > source(“SIMPLE_Neutral.R”)
 ```
