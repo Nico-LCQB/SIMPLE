@@ -13,15 +13,15 @@ Setwd()
 ## LAUNCH THE SCRIPT (for both version):
 Prior any simulation, you have to manually enter the parameter values of the simulation in the 1st section the Rscript files entitled: “Simulation parameters”. 
 For both versions:
--	Output: name used for the result files (output.verbose.txt and output.res.txt)
--	r1: rate of the mutation A
--	r2: rate of the mutation B
--	g: number of generations starting from 1 cell (note that more than 27 generations will generate huge files that will require more than 16Gb of RAM)
--	n: number of realizations (correspond to the number of colonies to simulate)
+* Output: name used for the result files (output.verbose.txt and output.res.txt)
+* r1: rate of the mutation A
+* r2: rate of the mutation B
+* g: number of generations starting from 1 cell (note that more than 27 generations will generate huge files that will require more than 16Gb of RAM)
+* n: number of realizations (correspond to the number of colonies to simulate)
 Only for the refined version:
--	hyp: number of hypermutator cells in the population (for simulation without hypermutator cells, set this parameter to 1)
--	mult: the fold change increase of mutation rates in the hypermutator subpopulation (for simulation without hypermutator cells, set this parameter to 1)
--	ngen: number of consecutive hypermutator generations 
+* hyp: number of hypermutator cells in the population (for simulation without hypermutator cells, set this parameter to 1)
+* mult: the fold change increase of mutation rates in the hypermutator subpopulation (for simulation without hypermutator cells, set this parameter to 1)
+* ngen: number of consecutive hypermutator generations 
 About system requirement
 Note that the simulation process requires mainly memory resources. The script was tested on a current generation computer (Core i7-9700 - 16Go RAM). With that configuration, each simulation uses up to 30% of one thread, but also generates up to 10Gb of temporary files. Even if they are deleted at the end of each simulation, this has to be considered if you want to launch several simulations in parallel.
 
@@ -48,12 +48,12 @@ memory.limit(size = 10000)
 
 ## DURING THE SIMULATION:
 Once you have entered all these parameters; the simulation will start. First there will be a summary of your parameters and then the results of each generation of each simulation, starting by indicating the current realization (“simulation cycle:  X  on  Y”). Then the generation at which the transient mutators will appear is indicated ("transient mutators appears at generation:   x"). Finally, the results for the sampling for each generation will be indicated, as follows: "generation:  1 res:  0   0   0   0   0   0". The res gives in order from the left to the right:
--	The cumulative number of mutant A
--	The cumulative number of mutant B
--	The cumulative number of mutant A and B
--	The cumulative number of mutation A
--	The cumulative number of mutation B
--	The cumulative number of mutation AB
+* The cumulative number of mutant A
+* The cumulative number of mutant B
+* The cumulative number of mutant A and B
+* The cumulative number of mutation A
+* The cumulative number of mutation B
+* The cumulative number of mutation AB
 
 ## SAVING THE RESULTS:
 The results are saved automatically in the current working directory. If you are under windows, you have chosen it at the beginning of the process. Under Ubuntu, they will be stored in the same folder than the one containing the script. Note that 2 output files will be generated: 
