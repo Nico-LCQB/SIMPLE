@@ -39,6 +39,7 @@ memory.limit(size = 10000)
 	* Using the File/Open File, open the file “SIMPLE_Neutral.R”
 
 ## Linux environment (e.g. ubuntu)
+
 	* Go into the folder containing the file “SIMPLE_Neutral.R”
 	* The command to launch the script is:
 ```
